@@ -1,0 +1,16 @@
+from newsFunNW import newsquery
+
+Obtain a key from     https://newsapi.org/register
+apiKey = 'Your-API-Key-Here'
+
+Get All Headline news items from USA
+newsquery.getNews(apiKey)
+
+Get four Headline news items from France
+newsquery.getNews(apiKey,country="fr",number=4)
+
+Get four Healine news items about Cannes from France
+newsquery.getNews(apiKey,country="fr",number=4,topic="Cannes")
+
+Country Codes.  Unsure if newsapi.org uses these; likely it does.
+https://www.iban.com/country-codes
